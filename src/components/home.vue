@@ -259,7 +259,6 @@ export default {
   .card {
     position: relative;
     display: block;
-    height: 500px;
     width: 300px;
     border: 3px solid #0a0a16;  
     border-radius: calc(var(--curve) * 1.2px) !important;
