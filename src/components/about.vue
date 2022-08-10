@@ -13,17 +13,17 @@
         <div class="about-content">
               <div class="about-cards">
                 <article class='about-card'>
-                  <FaAward class='about-icon'/>
+                  <BootstrapIcon class="about-icon" icon="chevron-bar-expand" size="2x" />
                   <h5  class="text-white" >Exprience</h5>
                   <small class="text-light" >2+ Years Working Exprience</small>   
                 </article>
                 <article class='about-card'>
-                  <FiUsers class='about-icon'/>
+                  <BootstrapIcon  class="about-icon" icon="person-workspace" size="2x" />
                   <h5 class="text-white" >Clients</h5>
                   <small class="text-light" >2+ Happy Clients</small>   
                 </article>
                 <article class='about-card'>
-                  <VscFolderLibrary class='about-icon'/>
+                  <BootstrapIcon class="about-icon" icon="bounding-box" size="2x" />
                   <h5 class="text-white" >Projects</h5>
                   <small class="text-light">15+ Completed Projects</small>   
                 </article>
@@ -107,8 +107,8 @@ img {
 }
 .about-icon {
     color: #2fa6fc;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 .about-card h5 {
     font-size: 1.1rem;   

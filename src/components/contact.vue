@@ -7,19 +7,19 @@
       <div class="container contact-container">
         <div class="contact-options">
               <article class="contact-option">
-                <HiOutlineMail class='contact-icon'/>
+                <BootstrapIcon class="contact-icon" icon="envelope" size="2x" />
                 <h4> Email</h4>
                 <h5 class="text-light" >amlankumar47@gmail.com</h5>
                 <a target='_blank' href="mailto:amlankumar47@gmail.com">Send a Email</a>
               </article>
               <article class="contact-option">
-                <RiMessengerLine class='contact-icon'/>
+                <BootstrapIcon class="contact-icon" icon="chat" size="2x" />
                 <h4>Messenger</h4>
                 <h5 class="text-light" >Amlan Kumar Mandol</h5>
                 <a target='_blank' href="https://m.me/amlan.mandol">Send a Message</a>
               </article>
               <article class="contact-option">
-                <BsWhatsapp class='contact-icon'/>
+                <BootstrapIcon class="contact-icon" icon="whatsapp" size="2x" />
                 <h4>WhatsApp</h4>
                 <h5 class="text-light" >+8801733472747</h5>
                 <a target='_blank' href="https://api.whatsapp.com/send?phone=+880173347247">Send a Message</a>
@@ -83,7 +83,8 @@ a {
     border-color: rgba(77,181,255,0.4);
 }
 .contact-icon {
-    font-size: 1.8rem;
+    color: #2fa6fc;
+    font-size: 2rem;
 }
 .contact-option h4 {
     font-size: .7rem;
@@ -115,11 +116,11 @@ input, textarea {
     background: transparent;
     border: 2px solid rgba(77,181,255,0.4);
     resize: none;
-    color: var(--color-white);
+    color: rgba(255, 255, 255, 0.733);
 }
 
 textarea {
-  height: 100px;
+  height: 200px;
 }
 ::placeholder {
     color: aliceblue;

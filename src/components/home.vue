@@ -168,6 +168,7 @@
       </div>
 
   </div>
+  
 </template>
 
 <script>
@@ -180,6 +181,7 @@ export default {
 <style>
 .brColor {
    background-color: #18183b;
+   border-bottom: .2px solid rgba(255, 255, 255, 0.171);
 }
 
 .container {
@@ -243,25 +245,28 @@ export default {
     padding: 3rem 3rem 0rem !important;
     list-style-type: none;
     justify-content: center;
+    overflow: hidden;
+    place-items: center;
+  }
+
+   .cardOfTwo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
   
   .card {
     position: relative;
     display: block;
     height: 500px;
-    width: 100%;
+    width: 300px;
     border: 3px solid #0a0a16;  
     border-radius: calc(var(--curve) * 1.2px) !important;
     overflow: hidden;
     text-decoration: none;
+    
   }
-
-  .cardOfTwo {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 
   .card__image {      
     width: 350px;
@@ -343,9 +348,7 @@ export default {
     .cards {
         grid-template-columns: repeat(4, minmax(280px, 1fr));
       }
-      .cardOfTwo {
-        width: 50% !important;
-      }
+      
 }
 @media screen and (max-width: 1690px) {
     .header{
@@ -353,16 +356,10 @@ export default {
     }
     .cards {
         grid-template-columns: repeat(3, minmax(270px, 1fr));
-      } 
-      .cardOfTwo {
-        width: 100%;
       }  
       .card__display{
         display: none;
       }  
-      .header_socials {
-        left: 2rem;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -370,10 +367,10 @@ export default {
         min-height: 68vh;
     }
     .cards {
-        grid-template-columns: repeat(2, minmax(290px, 1fr));
+        grid-template-columns: repeat(3, minmax(290px, 1fr));
       }
       .card__display{
-        display: block;
+        display: none;
       } 
 }
 
@@ -383,14 +380,16 @@ export default {
     }
     .cards {
         grid-template-columns: repeat(2, minmax(290px, 1fr));
-      }
-      .header_socials {
-        left: 1rem;
-    }
-      .cardOfTwo {
         display: grid;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    .cardOfTwo {
         grid-template-columns: repeat(2, minmax(290px, 1fr));
-    }
+     }
+     .card__display{
+        display: grid;
+      } 
     
 }
 @media screen and (max-width: 780px) {
@@ -398,25 +397,21 @@ export default {
         min-height: 68vh;
     }
     .cards {
-        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
       }
-      .header_socials {
-        display: none;
-    }
+    .cardOfTwo {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
+        gap: 2rem;
+        list-style-type: none;
+        justify-content: center;
+        overflow: hidden;
+     }
 }
 
 @media screen and (max-width: 680px) {
     .header{
         height: 100vh;
-    }
-    .header_socials {
-        display: none;
-    }
-    .scroll_down {
-        font-size: 1.5rem; 
-    }
-    .scroll_up {
-        font-size: 1.5rem;
     }
     .header__container {
         font-size: .8rem;

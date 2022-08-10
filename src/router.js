@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import home from './components/home.vue'
 import about from './components/about.vue'
 import contact from './components/contact.vue'
+import skill from './components/skill.vue'
 
 
 const routes = [
@@ -22,24 +23,17 @@ const routes = [
     name: 'contact',
     component: contact 
   },
-  
-  // { 
-  //   path: '/hooks', 
-  //   name: 'hook',
-  //   component: hooks 
-  // },
-  // { 
-  //   path: '/methods', 
-  //   name: 'medhods',
-  //   component: methods 
-  // }
+  { 
+    path: '/skill', 
+    name: 'skill',
+    component: skill 
+  },
     
   ]
   
   const router = createRouter({
-    // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
     history: createWebHistory(process.env.Base_URL),
-    routes: routes, // short for `routes: routes`
+    routes: routes,
   
   })
 

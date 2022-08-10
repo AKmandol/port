@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-color">
+<nav class="navbar navbar-expand-lg navbar-dark bg-color sticky-top">
   <a class="navbar-brand" href="#">
-    <img src="../assets/akm.jpg" alt="logo">
+    <img src="../assets/akm.png" alt="logo">
   </a>
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,11 +13,15 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <router-link class="nav-link active" aria-current="page" to="/" >Home</router-link>
+          <router-link class="nav-link" aria-current="page" to="/" >Home</router-link>
         </li>
 
         <li class="nav-item">
          <router-link class="nav-link" to="/about" >About me</router-link>
+        </li>
+
+        <li class="nav-item">
+         <router-link class="nav-link" to="/skill" >My Skill</router-link>
         </li>
 
         <li class="nav-item">
@@ -37,7 +41,7 @@
       <div class="container-fluid bgwhite py-4">
         <div class="row justify-content-between">
           <div class="col-lg-3 col-sm-12 text-left">
-            <a href="#"><img class="img-fluid mt-5 mb-1 p-2 imgage" src="../assets/akm.jpg" alt="" /></a>
+            <a href="#"><img class="img-fluid mt-5 mb-1 p-2 imgage" src="../assets/akm.png" alt="" /></a>
             <p class="w-lg-75 text-gray text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                Quibusdam hic debitis nam similique placeat ipsum dolor sit amet consectetur vero.</p>
           </div>
@@ -71,7 +75,7 @@
 
         </div>
       </div>
-      <p class="text-dark text-center ts-1 py-2 m-0 bg-light">Amlan Kumar Mandool all rights reserved.</p>
+      <p class="text-dark text-center ts-1 py-2 m-0 bg-light">&copy; Amlan Kumar Mandool all rights reserved.</p>
 
 
 </section>
@@ -83,6 +87,21 @@
 </script>
 
 <style>
+nav {
+  border-bottom: .2px solid rgba(255, 255, 255, 0.171);
+}
+
+section {
+  border-bottom: .2px solid rgba(255, 255, 255, 0.171);
+}
+.router-link-active {
+    color: #fff;
+    background-color: #25255c;
+    border: 2px solid #06060ede;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .bg-color {
   background-color: #121224 !important;
 }
@@ -98,7 +117,7 @@ ul  {
 }
 
 .navbar-brand img {
-  width: 50px;
+  width: 60px;
 }
 
 .imgage {
@@ -112,7 +131,14 @@ ul {
 
 li a {
   text-decoration: none;
-  color : white;
+  color : rgba(255, 255, 255, 0.788)!important;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 992px) {
+   .navbar-brand {
+    display: none;
+   }
 }
 
 </style>
